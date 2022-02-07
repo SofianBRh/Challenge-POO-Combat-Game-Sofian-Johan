@@ -1,0 +1,15 @@
+{
+    "name": "brhaiberh/brief_poo",
+    "autoload": {
+        "psr-4": {
+            "Brhaiberh\\BriefPoo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sofian",
+            "email": "sofianbrhaiberh9@gmail.com"
+        }
+    ],
+    "require": {}
+}
