@@ -2,7 +2,7 @@
     "name": "brhaiberh/brief_poo",
     "autoload": {
         "psr-4": {
-            "Brhaiberh\\BriefPoo\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
