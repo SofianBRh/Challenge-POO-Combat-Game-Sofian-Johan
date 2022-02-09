@@ -22,11 +22,18 @@ public function bonus_vie($vie = null){
         $this->vie += $vie;
     }
 }
-public function bonus_armur($armur){
-    $this->armure = 0;
-}
+public function bonus_armur($armur = 20){
+    if(range(0,3)){
+        $this->$armur=0;
+    }
+    else{
+        $this->armur+=$armur;
+    }
+   
+   
+} 
 public function mort(){
- return $this->vie=0;
+ return $this->vie<=0;
     
 }
 private function negatif(){
@@ -40,9 +47,10 @@ public function getVie(){
 }
 
 public function attaque($cible){
-    $cible->vie -= $this->atk -$cible->armure;
+    $cible->vie -= $this->atk -$cible->armur;
     $cible->armure =0 ;
 }
+
 
 
 
